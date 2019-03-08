@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>code.ponfee</groupId>
+  <artifactId>commons-compile</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>commons-compile</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>code.ponfee</groupId>
+      <artifactId>commons-core</artifactId>
+      <version>1.16-SNAPSHOT</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.mozilla.intl</groupId>
+          <artifactId>chardet</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>cpdetector</groupId>
+          <artifactId>cpdetector</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>aspose</groupId>
+          <artifactId>words-jdk16</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>third-jce</groupId>
+          <artifactId>third-jce</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.httpcomponents</groupId>
+          <artifactId>httpclient</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>dom4j</groupId>
+          <artifactId>dom4j</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>de.ruedigermoeller</groupId>
+          <artifactId>fst</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.caucho</groupId>
+          <artifactId>hessian</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.springframework.data</groupId>
+          <artifactId>spring-data-redis</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.redisson</groupId>
+          <artifactId>redisson</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.itextpdf</groupId>
+          <artifactId>itextpdf</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.zeroturnaround</groupId>
+          <artifactId>zt-zip</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.lmax</groupId>
+          <artifactId>disruptor</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+
+    <!-- jdk源码动态编译 -->
+    <dependency>
+      <groupId>com.sun</groupId>
+      <artifactId>tools</artifactId>
+      <version>${java.version}</version>
+      <scope>system</scope>
+      <systemPath>${JAVA_HOME}/lib/tools.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.groovy</groupId>
+      <artifactId>groovy</artifactId>
+      <version>2.5.6</version>
+    </dependency>
+
+  </dependencies>
+
+</project>

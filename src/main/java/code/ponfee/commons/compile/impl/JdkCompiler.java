@@ -17,7 +17,6 @@ import code.ponfee.commons.compile.model.RegexJavaSource;
 
 /**
  * jdk编译
- * @author fupf
  */
 public class JdkCompiler implements JavaSourceCompiler {
 

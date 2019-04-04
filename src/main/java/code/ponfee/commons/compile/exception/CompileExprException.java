@@ -2,7 +2,6 @@ package code.ponfee.commons.compile.exception;
 
 /**
  * 编译异常
- * @author fupf
  */
 public class CompileExprException extends RuntimeException {
 

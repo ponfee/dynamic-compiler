@@ -12,7 +12,6 @@ import code.ponfee.commons.compile.impl.JdkCompileTask;
 
 /**
  * extends SimpleJavaFileObject
- * @author fupf
  */
 public final class JavaFileObjectImpl extends SimpleJavaFileObject {
 

@@ -32,7 +32,7 @@ import com.sun.tools.javac.util.Context;
  * 
  * 基于jdk tools jar的语法/词法分析
  * 
- * @author fupf
+ * @author Ponfee
  */
 public class JavacJavaSource extends JavaSource {
     private static final long serialVersionUID = 8020419352084840057L;

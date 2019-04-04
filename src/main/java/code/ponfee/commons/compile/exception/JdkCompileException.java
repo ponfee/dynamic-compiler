@@ -10,7 +10,6 @@ import javax.tools.JavaFileObject;
 
 /**
  * 编译异常
- * @author fupf
  */
 public class JdkCompileException extends Exception {
 

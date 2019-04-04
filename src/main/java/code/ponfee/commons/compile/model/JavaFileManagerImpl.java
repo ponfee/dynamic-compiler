@@ -18,7 +18,6 @@ import code.ponfee.commons.compile.impl.JdkCompileTask;
 
 /**
  * java文件编译管理
- * @author fupf
  */
 public class JavaFileManagerImpl extends ForwardingJavaFileManager<JavaFileManager> {
 

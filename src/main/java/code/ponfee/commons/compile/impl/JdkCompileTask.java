@@ -28,7 +28,6 @@ import code.ponfee.commons.compile.model.JdkCompilerClassLoader;
 /**
  * 编译任务
  * @param <T>
- * @author fupf
  */
 public class JdkCompileTask<T> {
 

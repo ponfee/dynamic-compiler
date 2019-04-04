@@ -4,7 +4,6 @@ import code.ponfee.commons.compile.model.JavaSource;
 
 /**
  * java源代码动态编译
- * @author fupf
  */
 public interface JavaSourceCompiler {
 

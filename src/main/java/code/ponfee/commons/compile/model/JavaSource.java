@@ -4,7 +4,8 @@ import java.io.Serializable;
 
 /**
  * java源代码类
- * @author fupf
+ * 
+ * @author Ponfee
  */
 public abstract class JavaSource implements Serializable {
 

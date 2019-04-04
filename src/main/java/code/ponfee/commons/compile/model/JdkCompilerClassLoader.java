@@ -11,7 +11,6 @@ import javax.tools.JavaFileObject;
 
 /**
  * 编译加载类
- * @author fupf
  */
 public final class JdkCompilerClassLoader extends ClassLoader {
 

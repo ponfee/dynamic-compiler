@@ -6,7 +6,8 @@ import java.util.regex.Pattern;
 /**
  * 正则匹配不精确，建议用jdk-tools工具来进行词法分析（JavacJavaSource.java）
  * 只会匹配第一个public class类
- * @author fupf
+ * 
+ * @author Ponfee
  */
 public class RegexJavaSource extends JavaSource {
 

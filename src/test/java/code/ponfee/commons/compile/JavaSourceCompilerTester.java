@@ -14,7 +14,6 @@ import code.ponfee.commons.compile.model.JavaSource;
 import code.ponfee.commons.compile.model.JavacJavaSource;
 import code.ponfee.commons.compile.model.RegexJavaSource;
 import code.ponfee.commons.util.MavenProjects;
-import test.concurrent.TestThread;
 
 public class JavaSourceCompilerTester {
 
@@ -62,7 +61,7 @@ public class JavaSourceCompilerTester {
     }
 
     public @Test void testCompileForce() throws Exception {
-        String sourceCode = Files.asCharSource(MavenProjects.getTestJavaFile(TestThread.class), Charset.forName("UTF-8")).read();
+        String sourceCode = Files.asCharSource(MavenProjects.getTestJavaFile(this.getClass()), Charset.forName("UTF-8")).read();
         JavaSource javaSource = new JavacJavaSource(sourceCode);
         System.out.println(javaSource.getFullyQualifiedName());
 

@@ -81,10 +81,10 @@
     <!-- jdk源码动态编译 -->
     <dependency>
       <groupId>com.sun</groupId>
-      <artifactId>tools</artifactId>
-      <version>${java.version}</version>
-      <scope>system</scope>
-      <systemPath>${JAVA_HOME}/lib/tools.jar</systemPath>
+      <artifactId>jdk-tools</artifactId>
+      <version>1.8</version>
+      <!-- <scope>system</scope>
+      <systemPath>${JAVA_HOME}/lib/tools.jar</systemPath> -->
     </dependency>
     <dependency>
       <groupId>org.codehaus.groovy</groupId>

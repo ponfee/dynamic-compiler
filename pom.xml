@@ -23,6 +23,38 @@
       <version>1.16-SNAPSHOT</version>
       <exclusions>
         <exclusion>
+          <groupId>dom4j</groupId>
+          <artifactId>dom4j</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.caucho</groupId>
+          <artifactId>hessian</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>de.ruedigermoeller</groupId>
+          <artifactId>fst</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>redis.clients</groupId>
+          <artifactId>jedis</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.springframework.data</groupId>
+          <artifactId>spring-data-redis</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.itextpdf</groupId>
+          <artifactId>itextpdf</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>aspose</groupId>
+          <artifactId>words-jdk16</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>antlr</groupId>
+          <artifactId>antlr</artifactId>
+        </exclusion>
+        <exclusion>
           <groupId>org.mozilla.intl</groupId>
           <artifactId>chardet</artifactId>
         </exclusion>
@@ -31,48 +63,8 @@
           <artifactId>cpdetector</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>aspose</groupId>
-          <artifactId>words-jdk16</artifactId>
-        </exclusion>
-        <exclusion>
           <groupId>third-jce</groupId>
           <artifactId>third-jce</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.apache.httpcomponents</groupId>
-          <artifactId>httpclient</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>dom4j</groupId>
-          <artifactId>dom4j</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>de.ruedigermoeller</groupId>
-          <artifactId>fst</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>com.caucho</groupId>
-          <artifactId>hessian</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.springframework.data</groupId>
-          <artifactId>spring-data-redis</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.redisson</groupId>
-          <artifactId>redisson</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>com.itextpdf</groupId>
-          <artifactId>itextpdf</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.zeroturnaround</groupId>
-          <artifactId>zt-zip</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>com.lmax</groupId>
-          <artifactId>disruptor</artifactId>
         </exclusion>
       </exclusions>
     </dependency>

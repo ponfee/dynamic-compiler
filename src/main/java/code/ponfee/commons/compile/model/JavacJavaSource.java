@@ -1,16 +1,5 @@
 package code.ponfee.commons.compile.model;
 
-import static javax.lang.model.element.Modifier.ABSTRACT;
-import static javax.lang.model.element.Modifier.FINAL;
-import static javax.lang.model.element.Modifier.PUBLIC;
-import static javax.lang.model.element.Modifier.STRICTFP;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
-
-import javax.lang.model.element.Modifier;
-
 import com.sun.source.tree.ClassTree;
 import com.sun.source.util.TreeScanner;
 import com.sun.tools.javac.file.JavacFileManager;
@@ -18,6 +7,16 @@ import com.sun.tools.javac.parser.Parser;
 import com.sun.tools.javac.parser.ParserFactory;
 import com.sun.tools.javac.tree.JCTree.JCCompilationUnit;
 import com.sun.tools.javac.util.Context;
+
+import javax.lang.model.element.Modifier;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+
+import static javax.lang.model.element.Modifier.ABSTRACT;
+import static javax.lang.model.element.Modifier.FINAL;
+import static javax.lang.model.element.Modifier.PUBLIC;
+import static javax.lang.model.element.Modifier.STRICTFP;
 
 /**
  * <pre>
@@ -30,7 +29,7 @@ import com.sun.tools.javac.util.Context;
  *   </dependency>
  * </pre>
  * 
- * 基于jdk tools jar的语法/词法分析
+ * 基于jdk tools jar的词法/语法分析
  * 
  * @author Ponfee
  */

@@ -1,12 +1,5 @@
 package code.ponfee.commons.compile;
 
-import java.nio.charset.Charset;
-
-import org.apache.commons.lang3.StringUtils;
-import org.junit.Test;
-
-import com.google.common.io.Files;
-
 import $._.a.b.n323c23.$._.CompilerSource;
 import code.ponfee.commons.compile.impl.GroovyCompiler;
 import code.ponfee.commons.compile.impl.JdkCompiler;
@@ -14,8 +7,13 @@ import code.ponfee.commons.compile.model.JavaSource;
 import code.ponfee.commons.compile.model.JavacJavaSource;
 import code.ponfee.commons.compile.model.RegexJavaSource;
 import code.ponfee.commons.util.MavenProjects;
+import com.google.common.io.Files;
+import org.apache.commons.lang3.StringUtils;
+import org.junit.Test;
 
-public class JavaSourceCompilerTester {
+import java.nio.charset.Charset;
+
+public class JavaSourceCompilerTest {
 
     @Test
     public void testJdk() throws Exception {
@@ -41,7 +39,7 @@ public class JavaSourceCompilerTester {
 
     @Test
     public void testGroovy() throws Exception {
-        Class<?> _clazz = JavaSourceCompilerTester.class;
+        Class<?> _clazz = JavaSourceCompilerTest.class;
         //Class<?> _clazz = CompilerSource.class; // error
         String sourceCode = Files.asCharSource(MavenProjects.getTestJavaFile(_clazz), Charset.forName("UTF-8")).read();
 

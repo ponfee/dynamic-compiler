@@ -12,11 +12,21 @@ import groovy.lang.GroovyClassLoader;
 public class GroovyCompiler implements JavaSourceCompiler {
 
     // GroovyClassLoader(ClassLoader parentLoader)
-    private static final GroovyClassLoader GROOVY_CLASS_LOADER = new GroovyClassLoader();
+    private static final GroovyClassLoader DEFAULT_CLASS_LOADER = new GroovyClassLoader();
+
+    private final GroovyClassLoader gcl;
+
+    public GroovyCompiler() {
+        this.gcl = DEFAULT_CLASS_LOADER;
+    }
+
+    public GroovyCompiler(ClassLoader parent) {
+        this.gcl = new GroovyClassLoader(parent);
+    }
 
     @Override
     public Class<?> compile(String codeSource) {
-        Class<?> clazz = GROOVY_CLASS_LOADER.parseClass(codeSource);
+        Class<?> clazz = gcl.parseClass(codeSource);
         if (clazz == null) {
             throw new RuntimeException("Invalid code source: " + codeSource);
         }

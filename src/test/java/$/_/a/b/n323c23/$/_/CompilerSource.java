@@ -1,8 +1,6 @@
 package $._.a.b.n323c23.$._;
-	
-import java.io.UnsupportedEncodingException;
 
-public   	
+public
  	    final    strictfp	
 class		
 CompilerSource extends

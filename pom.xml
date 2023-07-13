@@ -3,7 +3,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>code.ponfee</groupId>
+  <groupId>cn.ponfee</groupId>
   <artifactId>commons-compile</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
@@ -11,17 +11,42 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>code.ponfee</groupId>
+      <groupId>cn.ponfee</groupId>
       <artifactId>commons-core</artifactId>
-      <version>2.2-SNAPSHOT</version>
+      <version>1.4</version>
       <exclusions>
+        <exclusion>
+          <groupId>org.bouncycastle</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.mybatis</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>io.protostuff</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.tika</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.alibaba</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.github.pagehelper</groupId>
+          <artifactId>pagehelper</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>javax.money</groupId>
+          <artifactId>money-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.javamoney</groupId>
+          <artifactId>moneta</artifactId>
+        </exclusion>
         <exclusion>
           <groupId>dom4j</groupId>
           <artifactId>dom4j</artifactId>
@@ -35,55 +60,41 @@
           <artifactId>fst</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>redis.clients</groupId>
-          <artifactId>jedis</artifactId>
+          <groupId>org.apache.poi</groupId>
+          <artifactId>poi-ooxml</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>org.springframework.data</groupId>
-          <artifactId>spring-data-redis</artifactId>
+          <groupId>com.monitorjbl</groupId>
+          <artifactId>xlsx-streamer</artifactId>
         </exclusion>
         <exclusion>
           <groupId>com.itextpdf</groupId>
           <artifactId>itextpdf</artifactId>
         </exclusion>
-        <exclusion>
-          <groupId>aspose</groupId>
-          <artifactId>words-jdk16</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>antlr</groupId>
-          <artifactId>antlr</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.mozilla.intl</groupId>
-          <artifactId>chardet</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>cpdetector</groupId>
-          <artifactId>cpdetector</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>third-jce</groupId>
-          <artifactId>third-jce</artifactId>
-        </exclusion>
       </exclusions>
     </dependency>
 
-
-    <!-- jdk源码动态编译 -->
-    <dependency>
-      <groupId>com.sun</groupId>
-      <artifactId>jdk-tools</artifactId>
-      <version>1.8</version>
-      <!-- <scope>system</scope>
-      <systemPath>${JAVA_HOME}/lib/tools.jar</systemPath> -->
-    </dependency>
+    <!-- 使用groovy动态编译 -->
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy</artifactId>
-      <version>2.5.6</version>
+      <version>3.0.16</version>
     </dependency>
 
+    <!-- 使用jdk-tools动态编译 -->
+    <dependency>
+      <groupId>cn.pivoto.jdk</groupId>
+      <artifactId>tools</artifactId>
+      <version>1.8</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
 </project>

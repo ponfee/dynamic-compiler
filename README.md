@@ -1,16 +1,18 @@
 # commons-compile
 
-## 简介
-**动态编译Java源代码并加载其字节码**
+## Introduction
+Java源代码动态编译并加载为Java Class对象
 
-## Groovy方式动态编译加载
-**基于Groovy实现：GroovyCompiler**
+## Implementation
 
-## JDK方式动态编译加载
-- **基于JDK实现：JdkCompiler**
-- **获取包与类名的两种方式**
-  - RegexJavaSource：基于复杂的正则表达式
-  - JavacJavaSource：基于Javac编译器的词法/语法分析功能
+### 基于Groovy方式动态编译
+- GroovyCompiler
 
-## 使用说明
-To see [**`JavaSourceCompilerTest`**](https://github.com/ponfee/commons-compile/blob/master/src/test/java/code/ponfee/commons/compile/JavaSourceCompilerTest.java)
+### 基于JDK方式动态编译
+- JdkCompiler
+- 获取包与类名的两种方式
+  - RegexJavaSource：基于复杂的正则表达式提取
+  - JavacJavaSource：基于jdk tools.jar的Javac编译器功能
+
+## Usage
+To see [`JavaSourceCompilerTest`](src/test/java/cn/ponfee/commons/compile/JavaSourceCompilerTest.java)

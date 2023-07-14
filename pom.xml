@@ -83,9 +83,9 @@
 
     <!-- 使用jdk-tools动态编译 -->
     <dependency>
-      <groupId>cn.pivoto.jdk</groupId>
-      <artifactId>tools</artifactId>
-      <version>1.8</version>
+      <groupId>cn.ponfee</groupId>
+      <artifactId>jdk-tools</artifactId>
+      <version>1.8.0_371</version>
       <scope>provided</scope>
     </dependency>
 

@@ -1,4 +1,4 @@
-# Dynamic compiler java source code
+# Dynamic compile java source code
 
 ## Introduction
 Java源代码动态编译并加载为Java Class对象

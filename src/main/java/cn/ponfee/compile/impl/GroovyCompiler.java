@@ -1,7 +1,7 @@
-package cn.ponfee.commons.compile.impl;
+package cn.ponfee.compile.impl;
 
-import cn.ponfee.commons.compile.JavaSourceCompiler;
-import cn.ponfee.commons.compile.model.JavaSource;
+import cn.ponfee.compile.JavaSourceCompiler;
+import cn.ponfee.compile.model.JavaSource;
 import groovy.lang.GroovyClassLoader;
 
 /**

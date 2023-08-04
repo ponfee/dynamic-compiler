@@ -1,4 +1,4 @@
-package cn.ponfee.commons.compile.model;
+package cn.ponfee.compile.model;
 
 import java.io.Serializable;
 

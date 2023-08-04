@@ -1,4 +1,4 @@
-package cn.ponfee.commons.compile.exception;
+package cn.ponfee.compile.exception;
 
 import javax.tools.DiagnosticCollector;
 import javax.tools.JavaFileObject;

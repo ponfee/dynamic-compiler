@@ -1,8 +1,8 @@
-package cn.ponfee.commons.compile;
+package cn.ponfee.compile;
 
-import cn.ponfee.commons.compile.impl.JdkCompiler;
-import cn.ponfee.commons.compile.model.JavaSource;
-import cn.ponfee.commons.compile.model.JavacJavaSource;
+import cn.ponfee.compile.impl.JdkCompiler;
+import cn.ponfee.compile.model.JavaSource;
+import cn.ponfee.compile.model.JavacJavaSource;
 import org.apache.commons.io.IOUtils;
 import org.junit.Test;
 

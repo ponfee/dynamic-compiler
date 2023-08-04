@@ -1,4 +1,4 @@
-package cn.ponfee.commons.compile.sample1;
+package cn.ponfee.compile.sample1;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

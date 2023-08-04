@@ -1,4 +1,4 @@
-package cn.ponfee.commons.compile.model;
+package cn.ponfee.compile.model;
 
 import com.sun.source.tree.ClassTree;
 import com.sun.source.util.TreeScanner;

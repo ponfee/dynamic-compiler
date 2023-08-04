@@ -1,6 +1,6 @@
-package cn.ponfee.commons.compile;
+package cn.ponfee.compile;
 
-import cn.ponfee.commons.compile.model.JavaSource;
+import cn.ponfee.compile.model.JavaSource;
 
 /**
  * java源代码动态编译

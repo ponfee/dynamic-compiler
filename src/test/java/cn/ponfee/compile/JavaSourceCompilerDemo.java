@@ -1,8 +1,8 @@
-package cn.ponfee.commons.compile;
+package cn.ponfee.compile;
 
 import $._.a.b.n323c23.$._.CompilerSource;
-import cn.ponfee.commons.compile.model.JavaSource;
-import cn.ponfee.commons.compile.model.RegexJavaSource;
+import cn.ponfee.compile.model.JavaSource;
+import cn.ponfee.compile.model.RegexJavaSource;
 import cn.ponfee.commons.reflect.ClassUtils;
 import cn.ponfee.commons.util.MavenProjects;
 import com.google.common.io.Files;

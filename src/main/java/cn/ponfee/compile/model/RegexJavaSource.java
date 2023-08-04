@@ -1,4 +1,4 @@
-package cn.ponfee.commons.compile.model;
+package cn.ponfee.compile.model;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

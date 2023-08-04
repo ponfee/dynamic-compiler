@@ -1,6 +1,6 @@
-package cn.ponfee.commons.compile.model;
+package cn.ponfee.compile.model;
 
-import cn.ponfee.commons.compile.impl.JdkCompileTask;
+import cn.ponfee.compile.impl.JdkCompileTask;
 
 import javax.tools.SimpleJavaFileObject;
 import java.io.ByteArrayInputStream;

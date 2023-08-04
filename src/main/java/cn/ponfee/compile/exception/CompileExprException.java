@@ -1,4 +1,4 @@
-package cn.ponfee.commons.compile.exception;
+package cn.ponfee.compile.exception;
 
 /**
  * 编译异常
